@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vmin;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px lightgray;
+    padding: 20px;
+    width: 75vmin;    
+    height: 75vmin;
+}
+
+.dogs-list{
+    padding: 5px 100px 5px 5px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+
+.section{
+    display: flex;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+
+.dog{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.button {
+    background-color: rgb(147, 227, 247);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}

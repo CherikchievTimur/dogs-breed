@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <nav class="nav-bar">
+            <select name="dogs" class="dogs-list" id="dogs-list" onchange="onChangeDogBreed(event)">
+                <option value="any">Any</option>
+            </select>
+            <button class="button" onclick="onClickRefresh()">Refresh</button>
+        </nav>
+        <section class="section">
+            <img id="dog" class="dog" src="" alt="Dog">
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
