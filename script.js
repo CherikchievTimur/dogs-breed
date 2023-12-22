@@ -2,15 +2,15 @@ const dogsBreedList = document.querySelector(`#dogs-list`);
 const dogImage = document.querySelector('#dog');
 let dogBread = 'Any';
 
-const getDogsBreedList = async () => {
-    const res = await fetch(`https://dog.ceo/api/breeds/list/all`);
+const getData = async (url) => {
+    const res = await fetch(url);
     const data = await res.json()
 
     return data;
 }
 
 const loadDogsBreedList = async () => {
-    const data = await getDogsBreedList();
+    const data = await getData(`https://dog.ceo/api/breeds/list/all`);
 
     for (let breed of Object.entries(data.message)) {
         if (breed[1].length > 0) {
@@ -41,8 +41,7 @@ const getDogImage = async (breed) => {
     else
         url = `https://dog.ceo/api/breed/${breed}/images/random`;
 
-    const response = await fetch(url);
-    const data = await response.json();
+    const data = await getData(url);
 
     dogImage.src = data.message;
 }

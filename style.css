@@ -9,6 +9,19 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vmin;
+    background-image: linear-gradient(135deg,
+                hsl(0deg 0% 93%) 0%,
+                hsl(46deg 6% 92%) 19%,
+                hsl(46deg 10% 91%) 27%,
+                hsl(46deg 13% 90%) 34%,
+                hsl(46deg 15% 89%) 41%,
+                hsl(46deg 18% 88%) 47%,
+                hsl(46deg 19% 87%) 53%,
+                hsl(47deg 21% 86%) 59%,
+                hsl(47deg 22% 85%) 66%,
+                hsl(47deg 23% 84%) 73%,
+                hsl(47deg 24% 83%) 81%,
+                hsl(47deg 25% 82%) 100%);
 }
 
 .container {
@@ -17,35 +30,40 @@ body{
     gap: 10px;
     border: 1px solid lightgray;
     border-radius: 20px;
-    box-shadow: 5px 5px 15px lightgray;
+    box-shadow: 5px 5px 25px gray;
     padding: 20px;
     width: 75vmin;    
-    height: 75vmin;
+    height: 75vmin;    
 }
 
 .dogs-list{
-    padding: 5px 100px 5px 5px;
+    padding: 5px;
+    width: 50%;
     border: 1px solid lightgray;
-    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .section{
     display: flex;
     height: 100%;
+    width: 100%;
     border: 1px solid lightgray;
     border-radius: 20px;
 }
 
 .dog{
-    width: 100%;
-    height: 100%;
+    width: inherit;
+    height: inherit;
     border-radius: 20px;
 }
 
 .button {
-    background-color: rgb(147, 227, 247);
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    margin: 10px;
+    background-color: #495F75;
+    padding: 6px 20px;
+    border: 1px solid lightgray;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    font-weight: bold;
 }
